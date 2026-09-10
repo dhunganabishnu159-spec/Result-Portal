@@ -3,150 +3,188 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>श्री सरस्वती माध्यमिक विद्यालय - SEE 2082 नतिजा</title>
+<title>श्री सरस्वती माध्यमिक विद्यालय - नतिजा पोर्टल</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f4f7fb;color:#172033}
-.container{max-width:1000px;margin:auto;padding:20px}
-.header{background:#fff;border-radius:18px;padding:22px;text-align:center;box-shadow:0 5px 20px #00000012;margin-bottom:20px}
-.logo{width:90px;height:90px;object-fit:contain;margin-bottom:8px}
-.header h1{margin:4px 0;font-size:28px}
-.header p{margin:5px 0;color:#566}
-.badge{display:inline-block;margin-top:10px;padding:7px 18px;border-radius:20px;background:#eef3ff;font-weight:bold}
-.search{background:#fff;border-radius:18px;padding:25px;box-shadow:0 5px 20px #00000012;text-align:center}
-.search h2{margin-top:0}
+.container{max-width:1050px;margin:auto;padding:20px}
+.header,.classes,.search,.result{background:#fff;border-radius:18px;box-shadow:0 5px 20px #00000012}
+.header{text-align:center;padding:22px;margin-bottom:20px}
+.logo{width:90px;height:90px;object-fit:contain}.header h1{margin:5px 0;font-size:28px}
+.header p{margin:5px;color:#566}.badge{display:inline-block;margin-top:10px;padding:7px 18px;border-radius:20px;background:#eef3ff;font-weight:bold}
+.classes{padding:25px;text-align:center}.classes h2{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.class-card{padding:18px 10px;border:2px solid #dbe3ef;border-radius:13px;background:#f8fafc;font-weight:bold}
+.active{cursor:pointer;border-color:#1d4ed8;background:#eef4ff}.active:hover{transform:translateY(-2px)}
+.disabled{opacity:.55;cursor:not-allowed}.class-card small{display:block;margin-top:6px;font-weight:normal;color:#667085}
+.search{padding:25px;text-align:center;margin-top:20px}.hidden{display:none}
 input{width:min(100%,500px);padding:14px;border:1px solid #ccd4df;border-radius:10px;font-size:17px}
 button{border:0;border-radius:10px;padding:13px 22px;font-size:16px;font-weight:bold;cursor:pointer;margin:8px 4px}
-.primary{background:#1d4ed8;color:white}
-.secondary{background:#e8edf5;color:#172033}
-.hidden{display:none}
-.error{margin-top:15px;color:#b42318;font-weight:bold}
-.result{background:white;border-radius:18px;padding:25px;box-shadow:0 5px 20px #00000012;margin-top:20px}
-.result-head{text-align:center;border-bottom:2px solid #e4e8ee;padding-bottom:15px;margin-bottom:18px}
-.result-head h2{margin:0 0 5px}
-.info{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:20px}
+.primary{background:#1d4ed8;color:#fff}.secondary{background:#e8edf5;color:#172033}
+.error{margin-top:12px;color:#b42318;font-weight:bold}
+.result{padding:25px;margin-top:20px}.result-head{text-align:center;border-bottom:2px solid #e4e8ee;padding-bottom:15px;margin-bottom:18px}
+.result-head h2{margin:0 0 5px}.info{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:20px}
 .info div{background:#f7f9fc;padding:11px;border-radius:9px}
-table{width:100%;border-collapse:collapse}
-th,td{border:1px solid #cfd6df;padding:10px;text-align:center}
-th{background:#f1f4f8}
+table{width:100%;border-collapse:collapse}th,td{border:1px solid #cfd6df;padding:10px;text-align:center}th{background:#f1f4f8}
 .summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
-.summary div{text-align:center;border:1px solid #dce2ea;border-radius:10px;padding:15px}
-.summary strong{display:block;font-size:22px;margin-top:5px}
+.summary div{text-align:center;border:1px solid #dce2ea;border-radius:10px;padding:15px}.summary strong{display:block;font-size:22px;margin-top:5px}
 .footer{text-align:center;color:#687386;padding:25px}
-@media(max-width:650px){.container{padding:10px}.header h1{font-size:22px}.info,.summary{grid-template-columns:1fr}th,td{padding:7px 4px;font-size:13px}.result{padding:15px}}
-@media print{body{background:#fff}.container{max-width:none}.search,.footer,.print-hide{display:none!important}.result{box-shadow:none;margin:0}.header{box-shadow:none;margin-bottom:10px}}
+@media(max-width:750px){.grid{grid-template-columns:repeat(2,1fr)}.header h1{font-size:22px}.info,.summary{grid-template-columns:1fr}}
+@media(max-width:430px){.grid{grid-template-columns:1fr 1fr}.container{padding:10px}.class-card{padding:14px 6px}th,td{padding:7px 4px;font-size:13px}}
+@media print{body{background:#fff}.container{max-width:none}.classes,.search,.footer,.print-hide{display:none!important}.result{box-shadow:none;margin:0}.header{box-shadow:none}}
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <img class="logo" src="logo.png" alt="विद्यालय लोगो">
-    <h1>श्री सरस्वती माध्यमिक विद्यालय</h1>
-    <p>इनरुवा न.पा.-९, बबिया, सुनसरी</p>
-    <div class="badge">SEE 2082 नतिजा</div>
-  </div>
 
-  <div class="search print-hide">
-    <h2>SEE 2082 नतिजा खोज्नुहोस्</h2>
-    <p>आफ्नो Symbol No. लेख्नुहोस्</p>
-    <input id="symbol" type="text" placeholder="जस्तै: 01001226R" autocomplete="off">
-    <br>
-    <button class="primary" onclick="searchResult()">नतिजा खोज्नुहोस्</button>
-    <div id="error" class="error"></div>
-  </div>
+<div class="header">
+<img class="logo" src="logo.png" alt="विद्यालय लोगो">
+<h1>श्री सरस्वती माध्यमिक विद्यालय</h1>
+<p>इनरुवा न.पा.-९, बबिया, सुनसरी</p>
+<div class="badge">विद्यार्थी नतिजा पोर्टल</div>
+</div>
 
-  <div id="result" class="result hidden">
-    <div class="result-head">
-      <h2>SEE 2082 नतिजा</h2>
-      <div>श्री सरस्वती माध्यमिक विद्यालय, इनरुवा-९, बबिया, सुनसरी</div>
-    </div>
+<div class="classes print-hide">
+<h2>कक्षा / तह छनोट गर्नुहोस्</h2>
+<div class="grid">
+<div class="class-card disabled">कक्षा १<small>Result उपलब्ध छैन</small></div>
+<div class="class-card disabled">कक्षा २<small>Result उपलब्ध छैन</small></div>
+<div class="class-card disabled">कक्षा ३<small>Result उपलब्ध छैन</small></div>
+<div class="class-card disabled">कक्षा ४<small>Result उपलब्ध छैन</small></div>
+<div class="class-card disabled">कक्षा ५<small>Result उपलब्ध छैन</small></div>
+<div class="class-card disabled">कक्षा ६<small>Result उपलब्ध छैन</small></div>
+<div class="class-card disabled">कक्षा ७<small>Result उपलब्ध छैन</small></div>
 
-    <div class="info">
-      <div><b>विद्यार्थीको नाम:</b> <span id="name"></span></div>
-      <div><b>Symbol No.:</b> <span id="symbolNo"></span></div>
-      <div><b>जन्ममिति:</b> <span id="dob"></span></div>
-      <div><b>GPA:</b> <span id="gpa"></span></div>
-    </div>
+<div class="class-card active" onclick="showSearch('class8')">
+कक्षा ८ (BLE)<small>नतिजा हेर्नुहोस्</small>
+</div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>क्र.सं.</th>
-          <th>विषय</th>
-          <th>सैद्धान्तिक (TH)</th>
-          <th>आन्तरिक (IN)</th>
-        </tr>
-      </thead>
-      <tbody id="subjects"></tbody>
-    </table>
+<div class="class-card disabled">कक्षा ९<small>Result उपलब्ध छैन</small></div>
 
-    <div class="summary">
-      <div>GPA<strong id="gpa2"></strong></div>
-      <div>Result<strong id="remarks"></strong></div>
-      <div>स्थिति<strong id="status"></strong></div>
-    </div>
+<div class="class-card active" onclick="showSearch('see')">
+कक्षा १० (SEE)<small>SEE 2082 नतिजा</small>
+</div>
 
-    <div class="print-hide" style="text-align:center;margin-top:20px">
-      <button class="primary" onclick="window.print()">🖨️ Print / Save PDF</button>
-      <button class="secondary" onclick="document.getElementById('result').classList.add('hidden')">फेरि खोज्नुहोस्</button>
-    </div>
-  </div>
+<div class="class-card disabled">कक्षा ११<small>Result उपलब्ध छैन</small></div>
+<div class="class-card disabled">कक्षा १२<small>Result उपलब्ध छैन</small></div>
+</div>
+</div>
 
-  <div class="footer">© 2082 श्री सरस्वती माध्यमिक विद्यालय, इनरुवा-९, बबिया, सुनसरी</div>
+<div id="class8Search" class="search hidden print-hide">
+<h2>कक्षा ८ (BLE) नतिजा</h2><p>Roll No. लेख्नुहोस्</p>
+<input id="roll" placeholder="जस्तै: 1" autocomplete="off">
+<br><button class="primary" onclick="searchClass8()">नतिजा खोज्नुहोस्</button>
+<div id="class8Error" class="error"></div>
+</div>
+
+<div id="seeSearch" class="search hidden print-hide">
+<h2>कक्षा १० (SEE) — SEE 2082 नतिजा</h2><p>Symbol No. लेख्नुहोस्</p>
+<input id="symbol" placeholder="जस्तै: 01001226R" autocomplete="off">
+<br><button class="primary" onclick="searchSEE()">नतिजा खोज्नुहोस्</button>
+<div id="seeError" class="error"></div>
+</div>
+
+<div id="result" class="result hidden">
+<div class="result-head">
+<h2 id="resultTitle"></h2>
+<div>श्री सरस्वती माध्यमिक विद्यालय, इनरुवा-९, बबिया, सुनसरी</div>
+</div>
+
+<div class="info">
+<div><b>विद्यार्थीको नाम:</b> <span id="name"></span></div>
+<div><b id="idLabel">Roll No.:</b> <span id="studentId"></span></div>
+<div><b>जन्ममिति:</b> <span id="dob"></span></div>
+<div><b>GPA:</b> <span id="gpa"></span></div>
+</div>
+
+<table>
+<thead><tr><th>क्र.सं.</th><th>विषय</th><th>सैद्धान्तिक / प्राप्ताङ्क</th><th>आन्तरिक / Grade</th></tr></thead>
+<tbody id="subjects"></tbody>
+</table>
+
+<div class="summary">
+<div>GPA<strong id="gpa2"></strong></div>
+<div>Result<strong id="remarks"></strong></div>
+<div>स्थिति<strong id="status"></strong></div>
+</div>
+
+<div class="print-hide" style="text-align:center;margin-top:20px">
+<button class="primary" onclick="window.print()">🖨️ Print / Save PDF</button>
+<button class="secondary" onclick="resetPortal()">फेरि खोज्नुहोस्</button>
+</div>
+</div>
+
+<div class="footer">© 2082 श्री सरस्वती माध्यमिक विद्यालय, इनरुवा-९, बबिया, सुनसरी</div>
 </div>
 
 <script>
-let data=[];
+let class8Data=[],seeData=[];
 
-async function loadData(){
-  try{
-    const res=await fetch("see-2082-result.json");
-    if(!res.ok) throw new Error("HTTP "+res.status);
-    data=await res.json();
-  }catch(e){
-    document.getElementById("error").textContent="Result data load हुन सकेन। GitHub Pages बाट portal खोल्नुहोस्।";
-  }
+async function load(){
+try{let r=await fetch("class8-result.json");if(r.ok)class8Data=await r.json()}catch(e){}
+try{let r=await fetch("see-2082-result.json");if(r.ok)seeData=await r.json()}catch(e){}
 }
+
+function showSearch(type){
+document.getElementById("result").classList.add("hidden");
+document.getElementById("class8Search").classList.toggle("hidden",type!=="class8");
+document.getElementById("seeSearch").classList.toggle("hidden",type!=="see");
+if(type==="class8")document.getElementById("roll").focus();
+else document.getElementById("symbol").focus();
+}
+
 function esc(v){
-  return String(v ?? "").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))
 }
-function searchResult(){
-  const key=document.getElementById("symbol").value.trim().toUpperCase();
-  const err=document.getElementById("error");
-  const box=document.getElementById("result");
-  err.textContent="";
-  box.classList.add("hidden");
-  if(!key){err.textContent="कृपया Symbol No. लेख्नुहोस्।";return;}
-  const s=data.find(x=>String(x["Symbol No"]).trim().toUpperCase()===key);
-  if(!s){err.textContent="यो Symbol No. को नतिजा भेटिएन।";return;}
 
-  document.getElementById("name").textContent=s["Full Name"];
-  document.getElementById("symbolNo").textContent=s["Symbol No"];
-  document.getElementById("dob").textContent=formatDOB(s.DOB);
-  document.getElementById("gpa").textContent=s.GPA;
+function showResult(s,type){
+document.getElementById("name").textContent=s["Full Name"]||s["Student Name"]||"—";
+document.getElementById("studentId").textContent=type==="see"?s["Symbol No"]:s["Roll No"];
+document.getElementById("idLabel").textContent=type==="see"?"Symbol No.:":"Roll No.:";
+document.getElementById("dob").textContent=s.DOB||"—";
+document.getElementById("gpa").textContent=s.GPA||"—";
+document.getElementById("resultTitle").textContent=type==="see"?"कक्षा १० (SEE) — SEE 2082 नतिजा":"कक्षा ८ (BLE) नतिजा";
 
-  const subjects=[
-    ["English","English"],["Nepali","Nepali"],["Mathematics","Mathematics"],
-    ["Science","Science"],["Social","Social"],["Optional I","Optional I"],["Optional II","Optional II"]
-  ];
-  document.getElementById("subjects").innerHTML=subjects.map((a,i)=>{
-    const v=s[a[1]]||{};
-    return `<tr><td>${i+1}</td><td><b>${a[0]}</b></td><td>${esc(v.TH)}</td><td>${esc(v.IN)}</td></tr>`;
-  }).join("");
-
-  document.getElementById("gpa2").textContent=s.GPA;
-  document.getElementById("remarks").textContent=s.Remarks || "—";
-  document.getElementById("status").textContent=s.Remarks ? s.Remarks : "PASS";
-  box.classList.remove("hidden");
-  box.scrollIntoView({behavior:"smooth"});
+let rows=[];
+if(type==="see"){
+let subs=["English","Nepali","Mathematics","Science","Social","Optional I","Optional II"];
+rows=subs.map((x,i)=>{let v=s[x]||{};return `<tr><td>${i+1}</td><td><b>${x}</b></td><td>${esc(v.TH)}</td><td>${esc(v.IN)}</td></tr>`});
+}else{
+let subs=["Nepali","English","Mathematics","Science","Social"];
+rows=subs.map((x,i)=>`<tr><td>${i+1}</td><td><b>${x}</b></td><td>${esc(s[x])}</td><td>—</td></tr>`);
 }
-function formatDOB(v){
-  if(!v)return "—";
-  const m=String(v).match(/^(\d{4})-(\d{2})-(\d{2})/);
-  return m ? `${m[1]}-${m[2]}-${m[3]}` : v;
+document.getElementById("subjects").innerHTML=rows.join("");
+document.getElementById("gpa2").textContent=s.GPA||"—";
+document.getElementById("remarks").textContent=s.Remarks||s.Result||"—";
+document.getElementById("status").textContent=s.Remarks||s.Result||"PASS";
+document.getElementById("result").classList.remove("hidden");
+document.getElementById("result").scrollIntoView({behavior:"smooth"});
 }
-document.getElementById("symbol").addEventListener("keydown",e=>{if(e.key==="Enter")searchResult()});
-loadData();
+
+function searchClass8(){
+let k=document.getElementById("roll").value.trim();
+let e=document.getElementById("class8Error");e.textContent="";
+let s=class8Data.find(x=>String(x["Roll No"]).trim()===k);
+if(!s){e.textContent="यो Roll No. को नतिजा भेटिएन।";return}
+showResult(s,"class8");
+}
+
+function searchSEE(){
+let k=document.getElementById("symbol").value.trim().toUpperCase();
+let e=document.getElementById("seeError");e.textContent="";
+let s=seeData.find(x=>String(x["Symbol No"]).trim().toUpperCase()===k);
+if(!s){e.textContent="यो Symbol No. को नतिजा भेटिएन।";return}
+showResult(s,"see");
+}
+
+function resetPortal(){
+document.getElementById("result").classList.add("hidden");
+window.scrollTo({top:0,behavior:"smooth"});
+}
+
+document.getElementById("roll").addEventListener("keydown",e=>{if(e.key==="Enter")searchClass8()});
+document.getElementById("symbol").addEventListener("keydown",e=>{if(e.key==="Enter")searchSEE()});
+load();
 </script>
 </body>
 </html>
