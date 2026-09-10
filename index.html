@@ -2,182 +2,195 @@
 <html lang="ne">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>श्री सरस्वती माध्यमिक विद्यालय — Result Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Result Portal - NEB Style Grade Sheet</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f1f5f9;color:#172033}
-.header{background:linear-gradient(135deg,#0b5cab,#173b78);color:#fff;text-align:center;padding:24px 12px}
-.header img{width:82px;height:82px;object-fit:contain;background:#fff;border-radius:50%;padding:4px}
-.header h1{margin:8px 0 3px;font-size:27px}.header p{margin:3px 0}
-.wrap{max-width:1100px;margin:25px auto;padding:0 15px}
-h2{text-align:center;color:#173b78;margin:10px 0 20px}
-.classes{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;background:#fff;padding:18px;border-radius:18px;box-shadow:0 3px 15px #0001}
-.card{background:#fff;border:2px solid #e4eaf2;border-radius:15px;padding:18px 10px;text-align:center;cursor:not-allowed}
-.card.active{border-color:#2456e6;cursor:pointer;background:#eef4ff}.card.active:hover{transform:translateY(-2px)}
-.num{font-size:22px;font-weight:700}.card.disabled{color:#8a93a0}.card small{display:block;margin-top:7px}
-.panel{display:none;margin-top:25px;background:#fff;border-radius:18px;padding:25px;box-shadow:0 3px 15px #0001}.panel.show{display:block}
-.search{max-width:650px;margin:0 auto 18px;display:flex;gap:10px}.search input{flex:1;padding:14px;border:1px solid #cbd5e1;border-radius:10px;font-size:17px}
-button{border:0;border-radius:10px;background:#2456e6;color:#fff;padding:13px 22px;font-size:16px;cursor:pointer}
-.info{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}.info div{background:#f6f8fb;padding:13px;border-radius:10px;text-align:center}.info b{display:block;font-size:13px;color:#5f6b78;margin-bottom:5px}.gpa{font-size:22px;color:#0b5cab;font-weight:700}
-table{width:100%;border-collapse:collapse;margin-top:15px}th,td{border:1px solid #d5dde7;padding:10px;text-align:center}th{background:#2456e6;color:white}tr:nth-child(even){background:#f8fafc}
-.status{text-align:center;font-weight:700;font-size:18px;margin-top:18px}.pass{color:#087443}.ng{color:#b42318}.error{text-align:center;color:#b42318;font-weight:600;padding:15px}
-.actions{text-align:center;margin-top:20px}.footer{text-align:center;padding:28px;color:#718096;font-size:13px}
-@media(max-width:760px){.classes{grid-template-columns:repeat(2,1fr)}.info{grid-template-columns:repeat(2,1fr)}.search{flex-direction:column}}
-@media print{.header,.classes,h2,.search,.actions,.footer{display:none!important}.panel{display:block!important;box-shadow:none}.wrap{margin:0}}
-
-.neb-sheet{max-width:1000px;margin:20px auto;border:1px solid #555;padding:30px;background:#fff;color:#111;font-family:"Times New Roman",Arial,sans-serif}
-.neb-title{text-align:center;font-size:21px;font-weight:700;letter-spacing:.5px}
-.neb-heading{text-align:center;font-size:24px;font-weight:700;margin:12px 0 22px;text-decoration:underline}
-.neb-sheet p{font-size:15px;line-height:1.5;margin:7px 0}
-.neb-table{width:100%;border-collapse:collapse;margin-top:18px;font-size:14px}
-.neb-table th,.neb-table td{border:1px solid #333;padding:7px 6px;text-align:center;background:#fff;color:#111}
-.neb-table th{font-weight:700}
-.neb-table td:nth-child(2){text-align:left}
-.neb-gpa{border:1px solid #333;border-top:0;padding:11px;font-size:16px}
-.neb-status{text-align:center;margin:12px 0;font-size:18px}
-.neb-notes{border-top:1px solid #555;margin-top:18px;padding-top:10px;font-size:12px}
+*{box-sizing:border-box}
+body{margin:0;background:#eef2f6;color:#111;font-family:Arial,"Noto Sans Devanagari",sans-serif}
+.header{background:#0b4f8a;color:#fff;text-align:center;padding:18px 10px}
+.header img{width:70px;height:70px;object-fit:contain;background:#fff;border-radius:50%;padding:3px}
+.header h1{font-size:25px;margin:7px 0 2px}.header p{margin:2px 0;font-size:14px}
+.wrap{max-width:1100px;margin:22px auto;padding:0 14px}
+.classes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.card{background:#fff;border:1px solid #d5dde6;border-radius:12px;padding:16px;text-align:center;color:#7d8792}
+.card.active{color:#0b3f70;border:2px solid #1d5fd1;background:#f2f7ff;cursor:pointer}
+.card strong{display:block;font-size:19px}.card small{display:block;margin-top:5px}
+.panel{display:none}.panel.show{display:block}
+.searchbox{background:#fff;border-radius:12px;padding:18px;display:flex;gap:10px;margin-bottom:18px}
+.searchbox input{flex:1;padding:13px;border:1px solid #bcc8d5;border-radius:7px;font-size:16px}
+button{background:#175bd1;color:#fff;border:0;border-radius:7px;padding:12px 20px;font-size:15px;cursor:pointer}
+.error{text-align:center;color:#b42318;padding:16px;background:#fff;border-radius:8px}
+.sheet{background:#fff;width:100%;max-width:980px;margin:0 auto;padding:32px 38px;border:1px solid #c8cdd3;box-shadow:0 2px 10px #0001}
+.nebhead{text-align:center;border-bottom:1px solid #111;padding-bottom:8px}
+.nebhead .gov{font-size:16px;font-weight:bold}.nebhead .board{font-size:18px;font-weight:bold;margin-top:2px}
+.nebhead .exam{font-size:17px;font-weight:bold;margin-top:10px}
+.nebhead .grade{font-size:22px;font-weight:bold;margin-top:3px}
+.details{margin-top:14px;font-size:14px;line-height:1.9}
+.line{border-bottom:1px dotted #555;display:inline-block;min-width:250px;padding:0 5px}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:5px 28px;margin-top:3px}
+.meta div{border-bottom:1px dotted #777;min-height:25px}
+.intro{margin:14px 0 7px;font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{border:1px solid #555;padding:7px 5px;text-align:center}
+th{background:#edf1f5;font-weight:bold}
+.subject{text-align:left!important}
+.subcode{width:55px}.ch{width:55px}.gp{width:62px}.gr{width:58px}.remark{width:70px}
+.gpa{font-size:15px;font-weight:bold;text-align:right;padding:13px;border:1px solid #555;border-top:0}
+.note{font-size:11px;line-height:1.6;margin-top:14px}
+.signs{display:grid;grid-template-columns:1fr 1fr;gap:70px;margin-top:34px;text-align:center;font-size:12px}
+.signline{border-top:1px solid #333;padding-top:5px}
+.actions{text-align:center;margin:18px 0}.actions button{margin:0 5px}
+.bad{color:#b42318;font-weight:bold}
+@media(max-width:760px){
+ .classes{grid-template-columns:repeat(2,1fr)}
+ .sheet{padding:18px 10px;overflow-x:auto}
+ .meta{grid-template-columns:1fr}
+ .searchbox{flex-direction:column}
+ table{font-size:10px}
+}
 @media print{
- body{background:#fff}.neb-sheet{border:0;margin:0;max-width:none;padding:10mm}.neb-sheet .actions{display:none}
- .neb-table{font-size:12px}
+ body{background:#fff}.header,.classes,.searchbox,.actions{display:none!important}
+ .wrap{margin:0;padding:0}.panel{display:block!important}
+ .sheet{max-width:none;border:0;box-shadow:none;padding:15mm 12mm}
 }
 </style>
 </head>
 <body>
 <header class="header">
-<img src="logo.png" alt="विद्यालय लोगो">
+<img src="logo.png" alt="School Logo">
 <h1>श्री सरस्वती माध्यमिक विद्यालय</h1>
-<p>इनरुवा–९, बबिया, सुनसरी</p><p><b>Result Portal</b></p>
+<p>इनरुवा–९, बबिया, सुनसरी</p>
+<p><b>Online Result Portal</b></p>
 </header>
 
 <main class="wrap">
-<h2>कक्षा छनोट गर्नुहोस्</h2>
 <div class="classes">
-<div class="card disabled"><div class="num">कक्षा १</div><small>Result उपलब्ध छैन</small></div>
-<div class="card disabled"><div class="num">कक्षा २</div><small>Result उपलब्ध छैन</small></div>
-<div class="card disabled"><div class="num">कक्षा ३</div><small>Result उपलब्ध छैन</small></div>
-<div class="card disabled"><div class="num">कक्षा ४</div><small>Result उपलब्ध छैन</small></div>
-<div class="card disabled"><div class="num">कक्षा ५</div><small>Result उपलब्ध छैन</small></div>
-<div class="card disabled"><div class="num">कक्षा ६</div><small>Result उपलब्ध छैन</small></div>
-<div class="card disabled"><div class="num">कक्षा ७</div><small>Result उपलब्ध छैन</small></div>
-<div class="card active" onclick="openPanel('p8')"><div class="num">कक्षा ८ (BLE)</div><small>नतिजा हेर्नुहोस्</small></div>
-<div class="card disabled"><div class="num">कक्षा ९</div><small>Result उपलब्ध छैन</small></div>
-<div class="card active" onclick="openPanel('p10')"><div class="num">कक्षा १० (SEE)</div><small>SEE 2082 नतिजा</small></div>
-<div class="card disabled"><div class="num">कक्षा ११</div><small>Result उपलब्ध छैन</small></div>
-<div class="card disabled"><div class="num">कक्षा १२</div><small>Result उपलब्ध छैन</small></div>
+<div class="card"><strong>कक्षा १</strong><small>Result उपलब्ध छैन</small></div>
+<div class="card"><strong>कक्षा २</strong><small>Result उपलब्ध छैन</small></div>
+<div class="card"><strong>कक्षा ३</strong><small>Result उपलब्ध छैन</small></div>
+<div class="card"><strong>कक्षा ४</strong><small>Result उपलब्ध छैन</small></div>
+<div class="card"><strong>कक्षा ५</strong><small>Result उपलब्ध छैन</small></div>
+<div class="card"><strong>कक्षा ६</strong><small>Result उपलब्ध छैन</small></div>
+<div class="card"><strong>कक्षा ७</strong><small>Result उपलब्ध छैन</small></div>
+<div class="card active" onclick="openP('p8')"><strong>कक्षा ८ (BLE)</strong><small>नतिजा हेर्नुहोस्</small></div>
+<div class="card"><strong>कक्षा ९</strong><small>Result उपलब्ध छैन</small></div>
+<div class="card active" onclick="openP('p10')"><strong>कक्षा १० (SEE)</strong><small>SEE 2082 Grade Sheet</small></div>
+<div class="card"><strong>कक्षा ११</strong><small>Result उपलब्ध छैन</small></div>
+<div class="card"><strong>कक्षा १२</strong><small>Result उपलब्ध छैन</small></div>
 </div>
 
 <section id="p8" class="panel">
-<h2>कक्षा ८ (BLE) नतिजा</h2>
-<div class="search">
-<input id="roll8" placeholder="Roll No. लेख्नुहोस् (जस्तै: 1)" onkeydown="if(event.key==='Enter')search8()">
+<div class="searchbox">
+<input id="roll8" placeholder="Class 8 Roll No. लेख्नुहोस्">
 <button onclick="search8()">नतिजा खोज्नुहोस्</button>
 </div>
 <div id="out8"></div>
 </section>
 
 <section id="p10" class="panel">
-<h2>कक्षा १० (SEE) — SEE 2082 नतिजा</h2>
-<div class="search">
-<input id="sym10" placeholder="Symbol No. लेख्नुहोस् (जस्तै: 01001226R)" onkeydown="if(event.key==='Enter')search10()">
-<button onclick="search10()">नतिजा खोज्नुहोस्</button>
+<div class="searchbox">
+<input id="sym10" placeholder="SEE Symbol No. लेख्नुहोस् (जस्तै 01001226R)">
+<button onclick="search10()">Grade Sheet हेर्नुहोस्</button>
 </div>
 <div id="out10"></div>
 </section>
 </main>
-<footer class="footer">© श्री सरस्वती माध्यमिक विद्यालय, इनरुवा–९, बबिया, सुनसरी</footer>
 
 <script>
-let class8Data=[],seeData=[];
-
-async function loadData(){
+let c8=[],see=[];
+async function load(){
  try{
   const [a,b]=await Promise.all([
    fetch("class8-result.json?v="+Date.now(),{cache:"no-store"}),
    fetch("see-2082-result.json?v="+Date.now(),{cache:"no-store"})
   ]);
-  if(!a.ok||!b.ok) throw new Error("JSON load failed");
-  class8Data=await a.json(); seeData=await b.json();
+  c8=await a.json(); see=await b.json();
  }catch(e){console.error(e)}
 }
-loadData();
-
-const val=v=>(v===undefined||v===null)?"":String(v).trim();
-
-function openPanel(id){
+load();
+const V=x=>(x===undefined||x===null)?"":String(x).trim();
+function openP(id){
  document.querySelectorAll(".panel").forEach(x=>x.classList.remove("show"));
  document.getElementById(id).classList.add("show");
- document.getElementById(id).scrollIntoView({behavior:"smooth",block:"start"});
+ document.getElementById(id).scrollIntoView({behavior:"smooth"});
 }
-
 function search8(){
- const key=val(document.getElementById("roll8").value);
- const out=document.getElementById("out8");
- if(!key){out.innerHTML='<div class="error">कृपया Roll No. लेख्नुहोस्।</div>';return}
- const r=class8Data.find(x=>{
-   const roll=x.roll??x["Roll No"]??x["Roll No."]??x.Roll??x.roll_no??x.RollNo;
-   return val(roll)===key;
- });
- if(!r){out.innerHTML='<div class="error">यो Roll No. को नतिजा भेटिएन।</div>';return}
- const name=r.name??r["Student Name"]??r["Full Name"]??r.Name;
- const gpa=r.gpa??r.GPA??r.Gpa;
- const section=r.section??r.Section;
- const result=r.result??r.Result??r.status??r.Status??"";
- const subs=[["नेपाली",r.Nepali??r.nepali],["अंग्रेजी",r.English??r.english],["गणित",r.Mathematics??r.mathematics??r.Math],["विज्ञान",r.Science??r.science],["सामाजिक",r.Social??r.social]];
- out.innerHTML=`<div class="info">
- <div><b>विद्यार्थीको नाम</b><span>${val(name)}</span></div>
- <div><b>Roll No.</b><span>${val(key)}</span></div>
- <div><b>Section</b><span>${val(section)}</span></div>
- <div><b>GPA</b><span class="gpa">${val(gpa)}</span></div>
- </div>
- <table><thead><tr><th>क्र.सं.</th><th>विषय</th><th>प्राप्ताङ्क / Grade</th></tr></thead>
- <tbody>${subs.map((s,i)=>`<tr><td>${i+1}</td><td><b>${s[0]}</b></td><td>${val(s[1])}</td></tr>`).join("")}</tbody></table>
- <div class="status">${val(result)}</div>
- <div class="actions"><button onclick="window.print()">Print / Save PDF</button></div>`;
+ const k=V(document.getElementById("roll8").value);
+ const r=c8.find(x=>V(x.roll??x["Roll No"]??x.Roll)===k);
+ if(!r){document.getElementById("out8").innerHTML='<div class="error">यो Roll No. को नतिजा भेटिएन।</div>';return}
+ const rows=[["नेपाली",r.Nepali],["अंग्रेजी",r.English],["गणित",r.Mathematics??r.Math],["विज्ञान",r.Science],["सामाजिक",r.Social]];
+ document.getElementById("out8").innerHTML=`<div class="sheet">
+ <div class="nebhead"><div class="exam">SHREE SARASWATI SECONDARY SCHOOL</div><div class="grade">CLASS 8 (BLE) RESULT</div></div>
+ <div class="details"><b>Student Name:</b> ${V(r.name??r["Student Name"])} &nbsp;&nbsp; <b>Roll No:</b> ${k}</div>
+ <table><tr><th>SN</th><th>Subjects</th><th>Obtained Grade / Marks</th></tr>
+ ${rows.map((x,i)=>`<tr><td>${i+1}</td><td class="subject">${x[0]}</td><td>${V(x[1])}</td></tr>`).join("")}</table>
+ <div class="gpa">GPA: ${V(r.gpa??r.GPA)} &nbsp;&nbsp; Result: ${V(r.result??r.Result)}</div>
+ <div class="actions"><button onclick="window.print()">Print / Save PDF</button></div></div>`;
 }
-
-function gradePoint(g){
- const m={"A+":4.0,"A":3.6,"B+":3.2,"B":2.8,"C+":2.4,"C":2.0,"D":1.6,"E":1.2,"NG":0.0};
- return m[String(g||"").trim().toUpperCase()] ?? "";
-}
+const gp={"A+":4.0,"A":3.6,"B+":3.2,"B":2.8,"C+":2.4,"C":2.0,"D":1.6,"E":0.8,"NG":0};
+function gradePoint(g){return gp[V(g).toUpperCase()]??""}
 function search10(){
- const key=val(document.getElementById("sym10").value).replace(/\s+/g,"").toUpperCase();
- const out=document.getElementById("out10");
- if(!key){out.innerHTML='<div class="error">कृपया Symbol No. लेख्नुहोस्।</div>';return}
- const r=seeData.find(x=>val(x["Symbol No"]).replace(/\s+/g,"").toUpperCase()===key);
- if(!r){out.innerHTML='<div class="error">यो Symbol No. को नतिजा भेटिएन।</div>';return}
+ const k=V(document.getElementById("sym10").value).replace(/\s+/g,"").toUpperCase();
+ const r=see.find(x=>V(x["Symbol No"]).replace(/\s+/g,"").toUpperCase()===k);
+ if(!r){document.getElementById("out10").innerHTML='<div class="error">यो Symbol No. को नतिजा भेटिएन।</div>';return}
  const subjects=[
-  ["COMP. ENGLISH","English"],["COMP. NEPALI","Nepali"],["COMP. MATHEMATICS","Mathematics"],
-  ["COMP. SCIENCE","Science"],["COMP. SOCIAL STUDIES","Social"],["OPT. I","Optional I"],["OPT. II","Optional II"]
+  ["002","COMP. NEPALI","Nepali"],
+  ["004","COMP. ENGLISH","English"],
+  ["006","COMP. MATHEMATICS","Mathematics"],
+  ["008","COMP. SCIENCE AND TECHNOLOGY","Science"],
+  ["010","COMP. SOCIAL STUDIES","Social"],
+  ["102","OPTIONAL I","Optional I"],
+  ["202","OPTIONAL II","Optional II"]
  ];
- let idx=0, ng=false;
- const rows=[];
- subjects.forEach(([label,keyName])=>{
-   const v=r[keyName]||{};
-   const th=val(v.TH), inn=val(v.IN);
-   if(th.toUpperCase()==="NG"||inn.toUpperCase()==="NG") ng=true;
-   const thCR="3.75", inCR="1.25";
-   rows.push(`<tr><td>${++idx}</td><td>${label} (TH)</td><td>${thCR}</td><td>${th}</td><td>${gradePoint(th)}</td><td>${th}</td><td>${th.toUpperCase()==="NG"?"NG":""}</td></tr>`);
-   rows.push(`<tr><td></td><td>${label} (IN)</td><td>${inCR}</td><td>${inn}</td><td>${gradePoint(inn)}</td><td>${inn}</td><td>${inn.toUpperCase()==="NG"?"NG":""}</td></tr>`);
- });
- const gpa=(r.GPA===undefined||r.GPA===null)?"":val(r.GPA);
- const status=ng?"NG":"PASS";
- out.innerHTML=`<div class="neb-sheet">
- <div class="neb-title">SECONDARY EDUCATION EXAMINATION</div>
- <div class="neb-heading">GRADE-SHEET</div>
- <p><b>THE GRADE(S) SECURED BY</b> : ${val(r["Full Name"])}</p>
- <p><b>DATE OF BIRTH</b> : ${val(r.DOB).replace(" 00:00:00","")}</p>
- <p><b>SYMBOL NO.</b> : ${val(r["Symbol No"])}</p>
- <p>IN THE ANNUAL SEE EXAMINATION OF <b>2082 BS</b> ARE GIVEN BELOW.</p>
- <table class="neb-table"><thead><tr>
- <th>SN</th><th>SUBJECTS</th><th>CREDIT<br>HOURS</th><th>GRADE</th><th>GRADE<br>POINT</th><th>FINAL<br>GRADE</th><th>REMARKS</th>
- </tr></thead><tbody>${rows.join("")}</tbody></table>
- <div class="neb-gpa"><b>GRADE POINT AVERAGE (GPA) :</b> ${gpa}</div>
- <div class="neb-status"><b>${status}</b></div>
- <div class="neb-notes">
- <p>1. One Credit Hour equals 32 Clock Hours.</p>
- <p>2. TH : THEORY &nbsp;&nbsp; IN : INTERNAL</p>
- <p>3. NG : NON GRADED</p>
- <p><i>Note: This sheet is for general idea of grade(s) secured. This is not for official use.</i></p>
+ let hasNG=false;
+ const rows=subjects.map((s,i)=>{
+  const v=r[s[2]]||{}, th=V(v.TH), pr=V(v.IN);
+  if(th.toUpperCase()==="NG"||pr.toUpperCase()==="NG")hasNG=true;
+  // The supplied ledger contains grades, not separate grade-point fields.
+  // Grade points shown here are the standard points corresponding to those grades.
+  const final=th.toUpperCase()==="NG"||pr.toUpperCase()==="NG"?"NG":(th||pr);
+  const fgp=gradePoint(final);
+  return `<tr><td>${s[0]}</td><td class="subject">${s[1]}</td><td>4</td><td>${gradePoint(pr)}</td><td>${pr}</td><td>${gradePoint(th)}</td><td>${th}</td><td><b>${final}</b></td><td>${fgp}</td><td>${hasNG?"NG":""}</td></tr>`;
+ }).join("");
+ const gpa=V(r.GPA);
+ document.getElementById("out10").innerHTML=`<div class="sheet">
+ <div class="nebhead">
+  <div class="gov">GOVERNMENT OF NEPAL</div>
+  <div class="board">NATIONAL EXAMINATION BOARD</div>
+  <div class="exam">SECONDARY EDUCATION EXAMINATION, GRADE-10</div>
+  <div class="grade">GRADE-SHEET</div>
+ </div>
+ <div class="details">
+  <b>THE GRADE(S) SECURED BY:</b> <span class="line">${V(r["Full Name"])}</span>
+  <div class="meta">
+   <div><b>DATE OF BIRTH:</b> ${V(r.DOB).replace(" 00:00:00","")}</div>
+   <div><b>SYMBOL NO:</b> ${V(r["Symbol No"])}</div>
+  </div>
+ </div>
+ <div class="intro">IN THE ANNUAL SEE EXAMINATION, GRADE-10 OF <b>2082 B.S.</b> ARE GIVEN BELOW.</div>
+ <table>
+  <thead>
+   <tr>
+    <th rowspan="2" class="subcode">SUBJECT<br>CODE</th>
+    <th rowspan="2">SUBJECTS</th>
+    <th rowspan="2" class="ch">CREDIT<br>HOUR<br>(CH)</th>
+    <th colspan="2">INTERNAL (IN)</th>
+    <th colspan="2">EXTERNAL (TH)</th>
+    <th rowspan="2" class="gr">FINAL<br>GRADE</th>
+    <th rowspan="2" class="gp">GRADE<br>POINT</th>
+    <th rowspan="2" class="remark">REMARKS</th>
+   </tr>
+   <tr><th>GP</th><th>GRADE</th><th>GP</th><th>GRADE</th></tr>
+  </thead>
+  <tbody>${rows}</tbody>
+ </table>
+ <div class="gpa">GRADE POINT AVERAGE (GPA) = <b>${gpa}</b></div>
+ <div class="note">
+  <b>Note:</b> TH = Theory / External, IN = Internal. Grade-point values displayed in this online presentation are mapped from the grade letters in the supplied school ledger. This online sheet is a school result presentation and is <b>not an official NEB grade sheet.</b>
+ </div>
+ <div class="signs">
+  <div class="signline">Prepared by</div>
+  <div class="signline">School Administration</div>
  </div>
  <div class="actions"><button onclick="window.print()">Print / Save PDF</button></div>
  </div>`;
