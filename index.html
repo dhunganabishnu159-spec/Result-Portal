@@ -2,169 +2,143 @@
 <html lang="ne">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>श्री सरस्वती माध्यमिक विद्यालय - Result Portal</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>श्री सरस्वती माध्यमिक विद्यालय — Result Portal</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f3f6fa;color:#18212b}
-.header{background:linear-gradient(135deg,#0b5cab,#173b78);color:white;padding:22px 15px;text-align:center}
-.header img{width:78px;height:78px;object-fit:contain;background:white;border-radius:50%;padding:4px}
-.header h1{margin:8px 0 3px;font-size:26px}
-.header p{margin:3px 0;font-size:14px}
-.container{max-width:1100px;margin:25px auto;padding:0 15px}
-h2{text-align:center;margin-bottom:18px;color:#173b78}
-.classes{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
-.card{border:0;border-radius:14px;background:white;padding:18px;text-align:center;box-shadow:0 3px 12px #00000012;cursor:pointer;transition:.2s}
-.card:hover{transform:translateY(-2px)}
-.card.active{border:2px solid #0b73c9}
-.card.disabled{opacity:.48;cursor:not-allowed}
-.card .num{font-size:24px;font-weight:700;color:#0b5cab}
-.card small{display:block;margin-top:5px;color:#687586}
-.panel{display:none;margin-top:25px;background:white;border-radius:16px;padding:22px;box-shadow:0 3px 15px #00000012}
-.panel.show{display:block}
-.search{display:flex;gap:10px;max-width:650px;margin:0 auto 20px}
-.search input{flex:1;padding:13px 14px;border:1px solid #ccd5df;border-radius:9px;font-size:16px}
-.search button,.printbtn{border:0;border-radius:9px;padding:12px 18px;background:#0b5cab;color:white;font-size:15px;cursor:pointer}
-.back{background:#6b7280!important}
-.error{text-align:center;color:#b42318;font-weight:600;margin:15px}
-.info{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
-.info div{background:#f5f8fc;border-radius:10px;padding:12px;text-align:center}
-.info b{display:block;color:#5f6b78;font-size:12px;margin-bottom:4px}
-.info span{font-weight:700}
-.gpa{font-size:22px;color:#0b5cab}
-table{width:100%;border-collapse:collapse;margin-top:15px}
-th,td{border:1px solid #d8e0e8;padding:10px;text-align:center}
-th{background:#0b5cab;color:white}
-tr:nth-child(even){background:#f7f9fc}
-.status{text-align:center;font-size:18px;font-weight:700;margin:18px 0}
-.pass{color:#087443}.ng{color:#b42318}
-.actions{text-align:center;margin-top:20px}
-.footer{text-align:center;color:#718096;font-size:13px;padding:30px 10px}
-@media(max-width:750px){.classes{grid-template-columns:repeat(2,1fr)}.info{grid-template-columns:repeat(2,1fr)}.search{flex-direction:column}}
-@media print{.header,.classes,h2,.search,.actions,.footer,.back{display:none!important}.panel{display:block!important;box-shadow:none}.container{margin:0}.info{grid-template-columns:repeat(4,1fr)}}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f1f5f9;color:#172033}
+.header{background:linear-gradient(135deg,#0b5cab,#173b78);color:#fff;text-align:center;padding:24px 12px}
+.header img{width:82px;height:82px;object-fit:contain;background:#fff;border-radius:50%;padding:4px}
+.header h1{margin:8px 0 3px;font-size:27px}.header p{margin:3px 0}
+.wrap{max-width:1100px;margin:25px auto;padding:0 15px}
+h2{text-align:center;color:#173b78;margin:10px 0 20px}
+.classes{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;background:#fff;padding:18px;border-radius:18px;box-shadow:0 3px 15px #0001}
+.card{background:#fff;border:2px solid #e4eaf2;border-radius:15px;padding:18px 10px;text-align:center;cursor:not-allowed}
+.card.active{border-color:#2456e6;cursor:pointer;background:#eef4ff}.card.active:hover{transform:translateY(-2px)}
+.num{font-size:22px;font-weight:700}.card.disabled{color:#8a93a0}.card small{display:block;margin-top:7px}
+.panel{display:none;margin-top:25px;background:#fff;border-radius:18px;padding:25px;box-shadow:0 3px 15px #0001}.panel.show{display:block}
+.search{max-width:650px;margin:0 auto 18px;display:flex;gap:10px}.search input{flex:1;padding:14px;border:1px solid #cbd5e1;border-radius:10px;font-size:17px}
+button{border:0;border-radius:10px;background:#2456e6;color:#fff;padding:13px 22px;font-size:16px;cursor:pointer}
+.info{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}.info div{background:#f6f8fb;padding:13px;border-radius:10px;text-align:center}.info b{display:block;font-size:13px;color:#5f6b78;margin-bottom:5px}.gpa{font-size:22px;color:#0b5cab;font-weight:700}
+table{width:100%;border-collapse:collapse;margin-top:15px}th,td{border:1px solid #d5dde7;padding:10px;text-align:center}th{background:#2456e6;color:white}tr:nth-child(even){background:#f8fafc}
+.status{text-align:center;font-weight:700;font-size:18px;margin-top:18px}.pass{color:#087443}.ng{color:#b42318}.error{text-align:center;color:#b42318;font-weight:600;padding:15px}
+.actions{text-align:center;margin-top:20px}.footer{text-align:center;padding:28px;color:#718096;font-size:13px}
+@media(max-width:760px){.classes{grid-template-columns:repeat(2,1fr)}.info{grid-template-columns:repeat(2,1fr)}.search{flex-direction:column}}
+@media print{.header,.classes,h2,.search,.actions,.footer{display:none!important}.panel{display:block!important;box-shadow:none}.wrap{margin:0}}
 </style>
 </head>
 <body>
-<div class="header">
-  <img src="logo.png" alt="School Logo">
-  <h1>श्री सरस्वती माध्यमिक विद्यालय</h1>
-  <p>इनरुवा–९, बबिया, सुनसरी</p>
-  <p><b>Result Portal</b></p>
-</div>
+<header class="header">
+<img src="logo.png" alt="विद्यालय लोगो">
+<h1>श्री सरस्वती माध्यमिक विद्यालय</h1>
+<p>इनरुवा–९, बबिया, सुनसरी</p><p><b>Result Portal</b></p>
+</header>
 
-<div class="container">
+<main class="wrap">
 <h2>कक्षा छनोट गर्नुहोस्</h2>
 <div class="classes">
-  <div class="card disabled"><div class="num">१</div><small>Result उपलब्ध छैन</small></div>
-  <div class="card disabled"><div class="num">२</div><small>Result उपलब्ध छैन</small></div>
-  <div class="card disabled"><div class="num">३</div><small>Result उपलब्ध छैन</small></div>
-  <div class="card disabled"><div class="num">४</div><small>Result उपलब्ध छैन</small></div>
-  <div class="card disabled"><div class="num">५</div><small>Result उपलब्ध छैन</small></div>
-  <div class="card disabled"><div class="num">६</div><small>Result उपलब्ध छैन</small></div>
-  <div class="card disabled"><div class="num">७</div><small>Result उपलब्ध छैन</small></div>
-  <div class="card active" onclick="openClass(8)"><div class="num">८</div><small>BLE • Result उपलब्ध</small></div>
-  <div class="card disabled"><div class="num">९</div><small>Result उपलब्ध छैन</small></div>
-  <div class="card active" onclick="openClass(10)"><div class="num">१०</div><small>SEE • Result उपलब्ध</small></div>
-  <div class="card disabled"><div class="num">११</div><small>Result उपलब्ध छैन</small></div>
-  <div class="card disabled"><div class="num">१२</div><small>Result उपलब्ध छैन</small></div>
+<div class="card disabled"><div class="num">कक्षा १</div><small>Result उपलब्ध छैन</small></div>
+<div class="card disabled"><div class="num">कक्षा २</div><small>Result उपलब्ध छैन</small></div>
+<div class="card disabled"><div class="num">कक्षा ३</div><small>Result उपलब्ध छैन</small></div>
+<div class="card disabled"><div class="num">कक्षा ४</div><small>Result उपलब्ध छैन</small></div>
+<div class="card disabled"><div class="num">कक्षा ५</div><small>Result उपलब्ध छैन</small></div>
+<div class="card disabled"><div class="num">कक्षा ६</div><small>Result उपलब्ध छैन</small></div>
+<div class="card disabled"><div class="num">कक्षा ७</div><small>Result उपलब्ध छैन</small></div>
+<div class="card active" onclick="openPanel('p8')"><div class="num">कक्षा ८ (BLE)</div><small>नतिजा हेर्नुहोस्</small></div>
+<div class="card disabled"><div class="num">कक्षा ९</div><small>Result उपलब्ध छैन</small></div>
+<div class="card active" onclick="openPanel('p10')"><div class="num">कक्षा १० (SEE)</div><small>SEE 2082 नतिजा</small></div>
+<div class="card disabled"><div class="num">कक्षा ११</div><small>Result उपलब्ध छैन</small></div>
+<div class="card disabled"><div class="num">कक्षा १२</div><small>Result उपलब्ध छैन</small></div>
 </div>
 
-<div id="panel8" class="panel">
-  <h2>कक्षा ८ (BLE) — Result</h2>
-  <div class="search">
-    <input id="roll8" placeholder="Roll No. लेख्नुहोस् (जस्तै: 1)" onkeydown="if(event.key==='Enter')search8()">
-    <button onclick="search8()">Search</button>
-  </div>
-  <div id="out8"></div>
-  <div class="actions"><button class="printbtn" onclick="window.print()">Print / Save PDF</button></div>
+<section id="p8" class="panel">
+<h2>कक्षा ८ (BLE) नतिजा</h2>
+<div class="search">
+<input id="roll8" placeholder="Roll No. लेख्नुहोस् (जस्तै: 1)" onkeydown="if(event.key==='Enter')search8()">
+<button onclick="search8()">नतिजा खोज्नुहोस्</button>
 </div>
+<div id="out8"></div>
+</section>
 
-<div id="panel10" class="panel">
-  <h2>कक्षा १० (SEE) — Result 2082</h2>
-  <div class="search">
-    <input id="sym10" placeholder="Symbol No. लेख्नुहोस् (जस्तै: 01001226R)" onkeydown="if(event.key==='Enter')search10()">
-    <button onclick="search10()">Search</button>
-  </div>
-  <div id="out10"></div>
-  <div class="actions"><button class="printbtn" onclick="window.print()">Print / Save PDF</button></div>
+<section id="p10" class="panel">
+<h2>कक्षा १० (SEE) — SEE 2082 नतिजा</h2>
+<div class="search">
+<input id="sym10" placeholder="Symbol No. लेख्नुहोस् (जस्तै: 01001226R)" onkeydown="if(event.key==='Enter')search10()">
+<button onclick="search10()">नतिजा खोज्नुहोस्</button>
 </div>
-</div>
-<div class="footer">© श्री सरस्वती माध्यमिक विद्यालय, इनरुवा–९, बबिया, सुनसरी</div>
+<div id="out10"></div>
+</section>
+</main>
+<footer class="footer">© श्री सरस्वती माध्यमिक विद्यालय, इनरुवा–९, बबिया, सुनसरी</footer>
 
 <script>
-let class8Data = [];
-let seeData = [];
+let class8Data=[],seeData=[];
 
 async function loadData(){
-  try{
-    const [a,b] = await Promise.all([
-      fetch("class8-result.json?"+Date.now()),
-      fetch("see-2082-result.json?"+Date.now())
-    ]);
-    if(!a.ok) throw new Error("class8-result.json");
-    if(!b.ok) throw new Error("see-2082-result.json");
-    class8Data = await a.json();
-    seeData = await b.json();
-  }catch(e){
-    console.error(e);
-    document.querySelectorAll(".panel").forEach(p=>p.insertAdjacentHTML("afterbegin",
-      '<div class="error">⚠️ Result data load हुन सकेन। GitHub मा JSON file को नाम सही छ कि जाँच गर्नुहोस्।</div>'));
-  }
+ try{
+  const [a,b]=await Promise.all([
+   fetch("class8-result.json?v="+Date.now(),{cache:"no-store"}),
+   fetch("see-2082-result.json?v="+Date.now(),{cache:"no-store"})
+  ]);
+  if(!a.ok||!b.ok) throw new Error("JSON load failed");
+  class8Data=await a.json(); seeData=await b.json();
+ }catch(e){console.error(e)}
 }
 loadData();
 
-function openClass(n){
-  document.querySelectorAll(".panel").forEach(x=>x.classList.remove("show"));
-  document.getElementById("panel"+n).classList.add("show");
-  window.scrollTo({top:document.getElementById("panel"+n).offsetTop-15,behavior:"smooth"});
+const val=v=>(v===undefined||v===null)?"":String(v).trim();
+
+function openPanel(id){
+ document.querySelectorAll(".panel").forEach(x=>x.classList.remove("show"));
+ document.getElementById(id).classList.add("show");
+ document.getElementById(id).scrollIntoView({behavior:"smooth",block:"start"});
 }
 
-function clean(v){return v===null||v===undefined?"":String(v).trim()}
-
 function search8(){
-  const k=clean(document.getElementById("roll8").value);
-  const out=document.getElementById("out8");
-  if(!k){out.innerHTML='<div class="error">कृपया Roll No. लेख्नुहोस्।</div>';return}
-  const r=class8Data.find(x=>{
-    const v=x["Roll No"]??x["Roll No."]??x.roll??x.Roll;
-    return clean(v)===k;
-  });
-  if(!r){out.innerHTML='<div class="error">❌ Class 8 को Result भेटिएन। Roll No. जाँच गर्नुहोस्।</div>';return}
-  const name=r["Student Name"]??r["Full Name"]??r["Name"]??r.name??"";
-  const gpa=r["GPA"]??r.gpa??"";
-  const result=r["Result"]??r.result??r["Remarks"]??"";
-  const rows=["Nepali","English","Mathematics","Science","Social"].map(s=>`<tr><td>${s}</td><td>${clean(r[s])}</td></tr>`).join("");
-  out.innerHTML=`<div class="info">
-    <div><b>विद्यार्थीको नाम</b><span>${clean(name)}</span></div>
-    <div><b>Roll No.</b><span>${k}</span></div>
-    <div><b>Section</b><span>${clean(r["Section"]??r.section)}</span></div>
-    <div><b>GPA</b><span class="gpa">${clean(gpa)}</span></div>
-  </div>
-  <table><thead><tr><th>Subject</th><th>Result / Grade</th></tr></thead><tbody>${rows}</tbody></table>
-  <div class="status">${clean(result)}</div>`;
+ const key=val(document.getElementById("roll8").value);
+ const out=document.getElementById("out8");
+ if(!key){out.innerHTML='<div class="error">कृपया Roll No. लेख्नुहोस्।</div>';return}
+ const r=class8Data.find(x=>{
+   const roll=x.roll??x["Roll No"]??x["Roll No."]??x.Roll??x.roll_no??x.RollNo;
+   return val(roll)===key;
+ });
+ if(!r){out.innerHTML='<div class="error">यो Roll No. को नतिजा भेटिएन।</div>';return}
+ const name=r.name??r["Student Name"]??r["Full Name"]??r.Name;
+ const gpa=r.gpa??r.GPA??r.Gpa;
+ const section=r.section??r.Section;
+ const result=r.result??r.Result??r.status??r.Status??"";
+ const subs=[["नेपाली",r.Nepali??r.nepali],["अंग्रेजी",r.English??r.english],["गणित",r.Mathematics??r.mathematics??r.Math],["विज्ञान",r.Science??r.science],["सामाजिक",r.Social??r.social]];
+ out.innerHTML=`<div class="info">
+ <div><b>विद्यार्थीको नाम</b><span>${val(name)}</span></div>
+ <div><b>Roll No.</b><span>${val(key)}</span></div>
+ <div><b>Section</b><span>${val(section)}</span></div>
+ <div><b>GPA</b><span class="gpa">${val(gpa)}</span></div>
+ </div>
+ <table><thead><tr><th>क्र.सं.</th><th>विषय</th><th>प्राप्ताङ्क / Grade</th></tr></thead>
+ <tbody>${subs.map((s,i)=>`<tr><td>${i+1}</td><td><b>${s[0]}</b></td><td>${val(s[1])}</td></tr>`).join("")}</tbody></table>
+ <div class="status">${val(result)}</div>
+ <div class="actions"><button onclick="window.print()">Print / Save PDF</button></div>`;
 }
 
 function search10(){
-  const k=clean(document.getElementById("sym10").value).toUpperCase();
-  const out=document.getElementById("out10");
-  if(!k){out.innerHTML='<div class="error">कृपया Symbol No. लेख्नुहोस्।</div>';return}
-  const r=seeData.find(x=>clean(x["Symbol No"]).toUpperCase()===k);
-  if(!r){out.innerHTML='<div class="error">❌ SEE को Result भेटिएन। Symbol No. जाँच गर्नुहोस्।</div>';return}
-  const gpa = r.GPA===undefined || r.GPA===null ? "" : clean(r.GPA);
-  const rows=["English","Nepali","Mathematics","Science","Social","Optional I","Optional II"].map(s=>{
-    const v=r[s]||{};
-    return `<tr><td>${s}</td><td>${clean(v.TH)}</td><td>${clean(v.IN)}</td></tr>`;
-  }).join("");
-  const hasNG=["English","Nepali","Mathematics","Science","Social","Optional I","Optional II"].some(s=>clean((r[s]||{}).TH).toUpperCase()==="NG");
-  const status=hasNG?"NOT GRADED / NG":"PASS";
-  out.innerHTML=`<div class="info">
-    <div><b>विद्यार्थीको नाम</b><span>${clean(r["Full Name"])}</span></div>
-    <div><b>Symbol No.</b><span>${clean(r["Symbol No"])}</span></div>
-    <div><b>DOB</b><span>${clean(r.DOB).replace(" 00:00:00","")}</span></div>
-    <div><b>GPA</b><span class="gpa">${gpa}</span></div>
-  </div>
-  <table><thead><tr><th>Subject</th><th>Theory (TH)</th><th>Internal (IN)</th></tr></thead><tbody>${rows}</tbody></table>
-  <div class="status ${hasNG?'ng':'pass'}">${status}</div>`;
+ const key=val(document.getElementById("sym10").value).replace(/\s+/g,"").toUpperCase();
+ const out=document.getElementById("out10");
+ if(!key){out.innerHTML='<div class="error">कृपया Symbol No. लेख्नुहोस्।</div>';return}
+ const r=seeData.find(x=>val(x["Symbol No"]).replace(/\s+/g,"").toUpperCase()===key);
+ if(!r){out.innerHTML='<div class="error">यो Symbol No. को नतिजा भेटिएन।</div>';return}
+ const subjects=["English","Nepali","Mathematics","Science","Social","Optional I","Optional II"];
+ const ng=subjects.some(s=>val((r[s]||{}).TH).toUpperCase()==="NG"||val((r[s]||{}).IN).toUpperCase()==="NG");
+ const gpa=(r.GPA===undefined||r.GPA===null)?"":val(r.GPA);
+ const status=ng?"NG / NOT GRADED":"PASS";
+ out.innerHTML=`<div class="info">
+ <div><b>विद्यार्थीको नाम</b><span>${val(r["Full Name"])}</span></div>
+ <div><b>Symbol No.</b><span>${val(r["Symbol No"])}</span></div>
+ <div><b>जन्ममिति</b><span>${val(r.DOB).replace(" 00:00:00","")}</span></div>
+ <div><b>GPA</b><span class="gpa">${gpa}</span></div>
+ </div>
+ <table><thead><tr><th>क्र.सं.</th><th>विषय</th><th>सैद्धान्तिक / प्राप्ताङ्क</th><th>आन्तरिक / Grade</th></tr></thead>
+ <tbody>${subjects.map((s,i)=>{const v=r[s]||{};return `<tr><td>${i+1}</td><td><b>${s}</b></td><td>${val(v.TH)}</td><td>${val(v.IN)}</td></tr>`}).join("")}</tbody></table>
+ <div class="status ${ng?"ng":"pass"}">${status}</div>
+ <div class="actions"><button onclick="window.print()">Print / Save PDF</button></div>`;
 }
 </script>
 </body>
