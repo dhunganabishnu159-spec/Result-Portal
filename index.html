@@ -47,7 +47,7 @@ function grade(x){if(x>=90)return["A+","4.0"];if(x>=80)return["A","3.6"];if(x>=7
 async function findResult(){
  let q=roll.value.trim(); if(!q){msg.textContent="⚠️ कृपया Roll Number राख्नुहोस्।";result.style.display="none";return}
  try{
-  if(!data.length){let res=await fetch("class8-result.json");if(!res.ok)throw Error();data=await res.json()}
+  if(!data.length){let res=await fetch("https://raw.githubusercontent.com/dhunganabishnu159-spec/Result-Portal/main/class8-result.json");if(!res.ok)throw Error();data=await res.json()}
   let st=data.find(x=>String(x.roll)===String(q));
   if(!st){msg.textContent="❌ उक्त Roll Number को नतिजा भेटिएन।";result.style.display="none";return}
   msg.textContent="✅ नतिजा भेटियो।";r.textContent=st.roll;n.textContent=st.name;c.textContent=st.class;s.textContent=st.section;
