@@ -1,0 +1,1586 @@
+[
+  {
+    "SN": "1",
+    "Symbol No": "01001226R",
+    "Full Name": "Surendra Yadav",
+    "DOB": "2066-06-17 00:00:00",
+    "English": {
+      "TH": "A+",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "A+",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "A+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "A+",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "A+",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "GPA": "3.91",
+    "Remarks": ""
+  },
+  {
+    "SN": "2",
+    "Symbol No": "01001224P",
+    "Full Name": "Sintu Yadav",
+    "DOB": "2067-06-15 00:00:00",
+    "English": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "A+",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "A+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "GPA": "3.66",
+    "Remarks": ""
+  },
+  {
+    "SN": "3",
+    "Symbol No": "01001212D",
+    "Full Name": "Puja Kumari Yadav",
+    "DOB": "2068-03-05 00:00:00",
+    "English": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "GPA": "3.54",
+    "Remarks": ""
+  },
+  {
+    "SN": "4",
+    "Symbol No": "01001223O",
+    "Full Name": "Shrawan Kumar Mehta",
+    "DOB": "2066-08-02 00:00:00",
+    "English": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "GPA": "3.49",
+    "Remarks": ""
+  },
+  {
+    "SN": "5",
+    "Symbol No": "01001214F",
+    "Full Name": "Rekha Kumari Yadav",
+    "DOB": "2065-05-15 00:00:00",
+    "English": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "GPA": "3.24",
+    "Remarks": ""
+  },
+  {
+    "SN": "6",
+    "Symbol No": "01001218J",
+    "Full Name": "Sagun Kumari Uranw",
+    "DOB": "2066-03-08 00:00:00",
+    "English": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "GPA": "3.23",
+    "Remarks": ""
+  },
+  {
+    "SN": "7",
+    "Symbol No": "01001213E",
+    "Full Name": "Puja Kumari Yadav",
+    "DOB": "2065-05-12 00:00:00",
+    "English": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "GPA": "3.17",
+    "Remarks": ""
+  },
+  {
+    "SN": "8",
+    "Symbol No": "01001220L",
+    "Full Name": "Sanjana Sharma Khatwe",
+    "DOB": "2066-03-16 00:00:00",
+    "English": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "GPA": "3.15",
+    "Remarks": ""
+  },
+  {
+    "SN": "9",
+    "Symbol No": "01001203U",
+    "Full Name": "Manisha Kumari Kushwaha",
+    "DOB": "2066-12-21 00:00:00",
+    "English": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "GPA": "3.1",
+    "Remarks": ""
+  },
+  {
+    "SN": "10",
+    "Symbol No": "01001202T",
+    "Full Name": "Manisha Kumari Yadav",
+    "DOB": "2067-08-17 00:00:00",
+    "English": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "GPA": "3.04",
+    "Remarks": ""
+  },
+  {
+    "SN": "11",
+    "Symbol No": "01001216H",
+    "Full Name": "Roshan Mehta",
+    "DOB": "2064-09-01 00:00:00",
+    "English": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "GPA": "3.04",
+    "Remarks": ""
+  },
+  {
+    "SN": "12",
+    "Symbol No": "01001198P",
+    "Full Name": "Laxmi Kumari Thakur",
+    "DOB": "2063-07-04 00:00:00",
+    "English": {
+      "TH": "A",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "B+",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "GPA": "2.95",
+    "Remarks": ""
+  },
+  {
+    "SN": "13",
+    "Symbol No": "01001195M",
+    "Full Name": "Kalpana Kumari Mehta",
+    "DOB": "2067-02-12 00:00:00",
+    "English": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "GPA": "2.75",
+    "Remarks": ""
+  },
+  {
+    "SN": "14",
+    "Symbol No": "01001196N",
+    "Full Name": "Kanchan Kumari Yadav",
+    "DOB": "2066-01-01 00:00:00",
+    "English": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "GPA": "2.65",
+    "Remarks": ""
+  },
+  {
+    "SN": "15",
+    "Symbol No": "01001210B",
+    "Full Name": "Parwati Kumari Mehta",
+    "DOB": "2065-06-13 00:00:00",
+    "English": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "GPA": "2.65",
+    "Remarks": ""
+  },
+  {
+    "SN": "16",
+    "Symbol No": "01001189G",
+    "Full Name": "Binita Kumari Sardar",
+    "DOB": "2065-04-05 00:00:00",
+    "English": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "GPA": "2.64",
+    "Remarks": ""
+  },
+  {
+    "SN": "17",
+    "Symbol No": "01001194L",
+    "Full Name": "Kajal Kumari Yadav",
+    "DOB": "2064-03-13 00:00:00",
+    "English": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B",
+      "IN": "A"
+    },
+    "GPA": "2.64",
+    "Remarks": ""
+  },
+  {
+    "SN": "18",
+    "Symbol No": "01001197O",
+    "Full Name": "Kanchan Kumari Mandal",
+    "DOB": "2061-02-14 00:00:00",
+    "English": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "GPA": "2.61",
+    "Remarks": ""
+  },
+  {
+    "SN": "19",
+    "Symbol No": "01001193K",
+    "Full Name": "Dipasa Kumari Uranw",
+    "DOB": "2064-06-27 00:00:00",
+    "English": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "B",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "GPA": "2.56",
+    "Remarks": ""
+  },
+  {
+    "SN": "20",
+    "Symbol No": "01001187E",
+    "Full Name": "Babita Kumari Mehta",
+    "DOB": "2064-11-16 00:00:00",
+    "English": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "GPA": "2.54",
+    "Remarks": ""
+  },
+  {
+    "SN": "21",
+    "Symbol No": "01001186D",
+    "Full Name": "Asmita Sah",
+    "DOB": "2065-05-20 00:00:00",
+    "English": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "GPA": "2.48",
+    "Remarks": ""
+  },
+  {
+    "SN": "22",
+    "Symbol No": "01001205W",
+    "Full Name": "Nanda kishor Mehta",
+    "DOB": "2066-07-24 00:00:00",
+    "English": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "GPA": "2.44",
+    "Remarks": ""
+  },
+  {
+    "SN": "23",
+    "Symbol No": "01001185C",
+    "Full Name": "Asmita Mehta",
+    "DOB": "2065-01-17 00:00:00",
+    "English": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "B+",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "GPA": "2.41",
+    "Remarks": ""
+  },
+  {
+    "SN": "24",
+    "Symbol No": "01001191I",
+    "Full Name": "Budh narayan Mukhiya",
+    "DOB": "2064-10-09 00:00:00",
+    "English": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "GPA": "2.35",
+    "Remarks": ""
+  },
+  {
+    "SN": "25",
+    "Symbol No": "01001183A",
+    "Full Name": "Aakriti Khatwe",
+    "DOB": "2065-02-20 00:00:00",
+    "English": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "26",
+    "Symbol No": "01001184B",
+    "Full Name": "Asha Kumari Khatwe",
+    "DOB": "2064-03-22 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "27",
+    "Symbol No": "01001188F",
+    "Full Name": "Bandana Kumari Yadav",
+    "DOB": "2062-09-17 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "28",
+    "Symbol No": "01001190H",
+    "Full Name": "Bipina Kumari Sardar",
+    "DOB": "2063-08-02 00:00:00",
+    "English": {
+      "TH": "B",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "29",
+    "Symbol No": "01001192J",
+    "Full Name": "Devraj Biswakarma",
+    "DOB": "2066-07-15 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "30",
+    "Symbol No": "01001199Q",
+    "Full Name": "Laxmi Kumari Khatwe",
+    "DOB": "2067-01-05 00:00:00",
+    "English": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "B",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "NG",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "31",
+    "Symbol No": "01001200R",
+    "Full Name": "Mamta Sah",
+    "DOB": "2063-05-11 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "NG",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "32",
+    "Symbol No": "01001201S",
+    "Full Name": "Manika Yadav",
+    "DOB": "2064-04-08 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "33",
+    "Symbol No": "01001204V",
+    "Full Name": "Manoj Yadav",
+    "DOB": "2064-11-27 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "34",
+    "Symbol No": "01001206X",
+    "Full Name": "Neha Kumari Yadav",
+    "DOB": "2064-12-30 00:00:00",
+    "English": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "35",
+    "Symbol No": "01001207Y",
+    "Full Name": "Nishu Kumari Yadav",
+    "DOB": "2067-05-14 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "36",
+    "Symbol No": "01001208Z",
+    "Full Name": "Pabitra Kumari Mukhiya",
+    "DOB": "2067-07-23 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "37",
+    "Symbol No": "01001209A",
+    "Full Name": "Parwat Kumar Rishidev",
+    "DOB": "2066-11-18 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "38",
+    "Symbol No": "01001211C",
+    "Full Name": "Pramod thakur",
+    "DOB": "2062-09-16 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "39",
+    "Symbol No": "01001215G",
+    "Full Name": "Robi Mandal Dhanuk",
+    "DOB": "2065-04-22 00:00:00",
+    "English": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "B+",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "40",
+    "Symbol No": "01001217I",
+    "Full Name": "Sabita Kumari Sharma",
+    "DOB": "2066-10-01 00:00:00",
+    "English": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "B",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "B+",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "C",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "A",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "41",
+    "Symbol No": "01001219K",
+    "Full Name": "Salina Khatun",
+    "DOB": "2065-10-01 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Social": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "42",
+    "Symbol No": "01001221M",
+    "Full Name": "Santoshi Khatwe",
+    "DOB": "2067-04-27 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "B",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "NG",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional II": {
+      "TH": "B+",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "43",
+    "Symbol No": "01001222N",
+    "Full Name": "Sarita Kumari Sharma",
+    "DOB": "2067-08-07 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Nepali": {
+      "TH": "C+",
+      "IN": "A"
+    },
+    "Mathematics": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Science": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "NG",
+      "IN": "A"
+    },
+    "Optional I": {
+      "TH": "NG",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "B+",
+      "IN": "A"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  },
+  {
+    "SN": "44",
+    "Symbol No": "01001225Q",
+    "Full Name": "Subash Uranw",
+    "DOB": "2065-01-08 00:00:00",
+    "English": {
+      "TH": "NG",
+      "IN": "A+"
+    },
+    "Nepali": {
+      "TH": "C+",
+      "IN": "A+"
+    },
+    "Mathematics": {
+      "TH": "B",
+      "IN": "A+"
+    },
+    "Science": {
+      "TH": "D",
+      "IN": "A"
+    },
+    "Social": {
+      "TH": "B+",
+      "IN": "A+"
+    },
+    "Optional I": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "Optional II": {
+      "TH": "D",
+      "IN": "A+"
+    },
+    "GPA": "0",
+    "Remarks": ""
+  }
+]
