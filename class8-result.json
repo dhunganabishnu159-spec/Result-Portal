@@ -1,0 +1,67 @@
+[
+  {
+    "roll": 1,
+    "name": "Ram Sharma",
+    "class": 8,
+    "section": "A",
+    "nepali": 85,
+    "english": 78,
+    "math": 90,
+    "science": 82,
+    "social": 88,
+    "gpa": 3.75,
+    "result": "PASS"
+  },
+  {
+    "roll": 2,
+    "name": "Sita Rai",
+    "class": 8,
+    "section": "A",
+    "nepali": 78,
+    "english": 85,
+    "math": 88,
+    "science": 79,
+    "social": 80,
+    "gpa": 3.65,
+    "result": "PASS"
+  },
+  {
+    "roll": 3,
+    "name": "Hari Thapa",
+    "class": 8,
+    "section": "A",
+    "nepali": 65,
+    "english": 70,
+    "math": 75,
+    "science": 68,
+    "social": 72,
+    "gpa": 3.2,
+    "result": "PASS"
+  },
+  {
+    "roll": 4,
+    "name": "Gita Gurung",
+    "class": 8,
+    "section": "A",
+    "nepali": 90,
+    "english": 92,
+    "math": 88,
+    "science": 91,
+    "social": 89,
+    "gpa": 3.9,
+    "result": "PASS"
+  },
+  {
+    "roll": 5,
+    "name": "Ramesh BK",
+    "class": 8,
+    "section": "A",
+    "nepali": 55,
+    "english": 60,
+    "math": 58,
+    "science": 62,
+    "social": 65,
+    "gpa": 2.8,
+    "result": "PASS"
+  }
+]
