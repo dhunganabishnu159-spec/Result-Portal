@@ -24,6 +24,22 @@ table{width:100%;border-collapse:collapse;margin-top:15px}th,td{border:1px solid
 .actions{text-align:center;margin-top:20px}.footer{text-align:center;padding:28px;color:#718096;font-size:13px}
 @media(max-width:760px){.classes{grid-template-columns:repeat(2,1fr)}.info{grid-template-columns:repeat(2,1fr)}.search{flex-direction:column}}
 @media print{.header,.classes,h2,.search,.actions,.footer{display:none!important}.panel{display:block!important;box-shadow:none}.wrap{margin:0}}
+
+.neb-sheet{max-width:1000px;margin:20px auto;border:1px solid #555;padding:30px;background:#fff;color:#111;font-family:"Times New Roman",Arial,sans-serif}
+.neb-title{text-align:center;font-size:21px;font-weight:700;letter-spacing:.5px}
+.neb-heading{text-align:center;font-size:24px;font-weight:700;margin:12px 0 22px;text-decoration:underline}
+.neb-sheet p{font-size:15px;line-height:1.5;margin:7px 0}
+.neb-table{width:100%;border-collapse:collapse;margin-top:18px;font-size:14px}
+.neb-table th,.neb-table td{border:1px solid #333;padding:7px 6px;text-align:center;background:#fff;color:#111}
+.neb-table th{font-weight:700}
+.neb-table td:nth-child(2){text-align:left}
+.neb-gpa{border:1px solid #333;border-top:0;padding:11px;font-size:16px}
+.neb-status{text-align:center;margin:12px 0;font-size:18px}
+.neb-notes{border-top:1px solid #555;margin-top:18px;padding-top:10px;font-size:12px}
+@media print{
+ body{background:#fff}.neb-sheet{border:0;margin:0;max-width:none;padding:10mm}.neb-sheet .actions{display:none}
+ .neb-table{font-size:12px}
+}
 </style>
 </head>
 <body>
@@ -119,26 +135,52 @@ function search8(){
  <div class="actions"><button onclick="window.print()">Print / Save PDF</button></div>`;
 }
 
+function gradePoint(g){
+ const m={"A+":4.0,"A":3.6,"B+":3.2,"B":2.8,"C+":2.4,"C":2.0,"D":1.6,"E":1.2,"NG":0.0};
+ return m[String(g||"").trim().toUpperCase()] ?? "";
+}
 function search10(){
  const key=val(document.getElementById("sym10").value).replace(/\s+/g,"").toUpperCase();
  const out=document.getElementById("out10");
  if(!key){out.innerHTML='<div class="error">कृपया Symbol No. लेख्नुहोस्।</div>';return}
  const r=seeData.find(x=>val(x["Symbol No"]).replace(/\s+/g,"").toUpperCase()===key);
  if(!r){out.innerHTML='<div class="error">यो Symbol No. को नतिजा भेटिएन।</div>';return}
- const subjects=["English","Nepali","Mathematics","Science","Social","Optional I","Optional II"];
- const ng=subjects.some(s=>val((r[s]||{}).TH).toUpperCase()==="NG"||val((r[s]||{}).IN).toUpperCase()==="NG");
+ const subjects=[
+  ["COMP. ENGLISH","English"],["COMP. NEPALI","Nepali"],["COMP. MATHEMATICS","Mathematics"],
+  ["COMP. SCIENCE","Science"],["COMP. SOCIAL STUDIES","Social"],["OPT. I","Optional I"],["OPT. II","Optional II"]
+ ];
+ let idx=0, ng=false;
+ const rows=[];
+ subjects.forEach(([label,keyName])=>{
+   const v=r[keyName]||{};
+   const th=val(v.TH), inn=val(v.IN);
+   if(th.toUpperCase()==="NG"||inn.toUpperCase()==="NG") ng=true;
+   const thCR="3.75", inCR="1.25";
+   rows.push(`<tr><td>${++idx}</td><td>${label} (TH)</td><td>${thCR}</td><td>${th}</td><td>${gradePoint(th)}</td><td>${th}</td><td>${th.toUpperCase()==="NG"?"NG":""}</td></tr>`);
+   rows.push(`<tr><td></td><td>${label} (IN)</td><td>${inCR}</td><td>${inn}</td><td>${gradePoint(inn)}</td><td>${inn}</td><td>${inn.toUpperCase()==="NG"?"NG":""}</td></tr>`);
+ });
  const gpa=(r.GPA===undefined||r.GPA===null)?"":val(r.GPA);
- const status=ng?"NG / NOT GRADED":"PASS";
- out.innerHTML=`<div class="info">
- <div><b>विद्यार्थीको नाम</b><span>${val(r["Full Name"])}</span></div>
- <div><b>Symbol No.</b><span>${val(r["Symbol No"])}</span></div>
- <div><b>जन्ममिति</b><span>${val(r.DOB).replace(" 00:00:00","")}</span></div>
- <div><b>GPA</b><span class="gpa">${gpa}</span></div>
+ const status=ng?"NG":"PASS";
+ out.innerHTML=`<div class="neb-sheet">
+ <div class="neb-title">SECONDARY EDUCATION EXAMINATION</div>
+ <div class="neb-heading">GRADE-SHEET</div>
+ <p><b>THE GRADE(S) SECURED BY</b> : ${val(r["Full Name"])}</p>
+ <p><b>DATE OF BIRTH</b> : ${val(r.DOB).replace(" 00:00:00","")}</p>
+ <p><b>SYMBOL NO.</b> : ${val(r["Symbol No"])}</p>
+ <p>IN THE ANNUAL SEE EXAMINATION OF <b>2082 BS</b> ARE GIVEN BELOW.</p>
+ <table class="neb-table"><thead><tr>
+ <th>SN</th><th>SUBJECTS</th><th>CREDIT<br>HOURS</th><th>GRADE</th><th>GRADE<br>POINT</th><th>FINAL<br>GRADE</th><th>REMARKS</th>
+ </tr></thead><tbody>${rows.join("")}</tbody></table>
+ <div class="neb-gpa"><b>GRADE POINT AVERAGE (GPA) :</b> ${gpa}</div>
+ <div class="neb-status"><b>${status}</b></div>
+ <div class="neb-notes">
+ <p>1. One Credit Hour equals 32 Clock Hours.</p>
+ <p>2. TH : THEORY &nbsp;&nbsp; IN : INTERNAL</p>
+ <p>3. NG : NON GRADED</p>
+ <p><i>Note: This sheet is for general idea of grade(s) secured. This is not for official use.</i></p>
  </div>
- <table><thead><tr><th>क्र.सं.</th><th>विषय</th><th>सैद्धान्तिक / प्राप्ताङ्क</th><th>आन्तरिक / Grade</th></tr></thead>
- <tbody>${subjects.map((s,i)=>{const v=r[s]||{};return `<tr><td>${i+1}</td><td><b>${s}</b></td><td>${val(v.TH)}</td><td>${val(v.IN)}</td></tr>`}).join("")}</tbody></table>
- <div class="status ${ng?"ng":"pass"}">${status}</div>
- <div class="actions"><button onclick="window.print()">Print / Save PDF</button></div>`;
+ <div class="actions"><button onclick="window.print()">Print / Save PDF</button></div>
+ </div>`;
 }
 </script>
 </body>
