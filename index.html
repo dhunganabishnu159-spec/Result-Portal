@@ -1,407 +1,671 @@
 <!DOCTYPE html>
 <html lang="ne">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>विद्यालय नतिजा पोर्टल</title>
+<title>विद्यालय नतिजा पोर्टल</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#e8f5e9,#e3f2fd);
+    color:#222;
+}
+
+header{
+    background:#00695c;
+    color:white;
+    text-align:center;
+    padding:28px 15px;
+}
+
+header h1{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+header p{
+    margin:5px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.welcome{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.welcome h2{
+    color:#004d40;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.class-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:22px;
+}
+
+.class-card{
+    background:white;
+    padding:28px 15px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+    text-align:center;
+    transition:.3s;
+}
+
+.class-card:hover{
+    transform:translateY(-5px);
+}
+
+.class-card h3{
+    color:#00695c;
+    font-size:25px;
+    margin-bottom:18px;
+}
+
+button{
+    background:#00695c;
+    color:white;
+    border:none;
+    padding:11px 20px;
+    border-radius:7px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#004d40;
+}
+
+.disabled{
+    background:#999;
+    cursor:not-allowed;
+}
+
+.disabled:hover{
+    background:#999;
+}
+
+#searchSection{
+    display:none;
+    background:white;
+    max-width:700px;
+    margin:35px auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.search-title{
+    text-align:center;
+    color:#00695c;
+    margin-bottom:20px;
+}
+
+.search-area{
+    text-align:center;
+}
+
+input{
+    width:100%;
+    max-width:350px;
+    padding:13px;
+    border:1px solid #aaa;
+    border-radius:7px;
+    font-size:17px;
+    margin-bottom:12px;
+}
+
+#message{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+#resultBox{
+    display:none;
+    margin-top:25px;
+    border:1px solid #ddd;
+    padding:25px;
+    border-radius:10px;
+}
+
+.school-result{
+    text-align:center;
+    border-bottom:2px solid #00695c;
+    padding-bottom:15px;
+    margin-bottom:20px;
+}
+
+.school-result h2{
+    color:#00695c;
+}
+
+.student-info{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.student-info div{
+    background:#f5f5f5;
+    padding:12px;
+    border-radius:5px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:11px;
+    text-align:center;
+}
+
+th{
+    background:#00695c;
+    color:white;
+}
+
+.summary{
+    margin-top:20px;
+    text-align:center;
+    font-size:19px;
+    line-height:1.8;
+}
+
+.print-area{
+    text-align:center;
+    margin-top:20px;
+}
+
+footer{
+    background:#004d40;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:40px;
+}
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:22px;
     }
 
-    body {
-      min-height: 100vh;
-      background: linear-gradient(135deg, #e8f5e9, #e3f2fd);
-      color: #222;
+    .welcome h2{
+        font-size:24px;
     }
 
-    header {
-      background: #00695c;
-      color: white;
-      text-align: center;
-      padding: 28px 15px;
+    .student-info{
+        grid-template-columns:1fr;
     }
 
-    header h1 {
-      font-size: 28px;
-      margin-bottom: 8px;
+    th,td{
+        font-size:13px;
+        padding:8px 4px;
+    }
+}
+
+@media print{
+
+    body{
+        background:white;
     }
 
-    header p {
-      margin: 5px;
+    header,
+    .welcome,
+    .class-grid,
+    #searchSection > .search-title,
+    .search-area,
+    footer,
+    .print-area{
+        display:none !important;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 35px auto;
-      padding: 20px;
+    #searchSection{
+        display:block !important;
+        box-shadow:none;
+        margin:0;
     }
 
-    .search-box {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.12);
-      text-align: center;
+    #resultBox{
+        display:block !important;
+        border:none;
     }
 
-    .search-box h2 {
-      color: #00695c;
-      margin-bottom: 10px;
-    }
+}
 
-    .search-box p {
-      margin-bottom: 20px;
-    }
-
-    input {
-      width: 100%;
-      max-width: 350px;
-      padding: 13px;
-      border: 1px solid #bbb;
-      border-radius: 7px;
-      font-size: 17px;
-      margin-bottom: 12px;
-    }
-
-    button {
-      padding: 12px 25px;
-      border: none;
-      border-radius: 7px;
-      background: #00695c;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #004d40;
-    }
-
-    #message {
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    .result {
-      display: none;
-      margin-top: 25px;
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.12);
-    }
-
-    .student-info {
-      text-align: center;
-      border-bottom: 2px solid #00695c;
-      padding-bottom: 15px;
-      margin-bottom: 20px;
-    }
-
-    .student-info h2 {
-      color: #00695c;
-      margin-bottom: 10px;
-    }
-
-    .info {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .info div {
-      background: #f5f5f5;
-      padding: 10px;
-      border-radius: 5px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 11px;
-      text-align: center;
-    }
-
-    th {
-      background: #00695c;
-      color: white;
-    }
-
-    .summary {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 19px;
-    }
-
-    .print-btn {
-      margin-top: 20px;
-    }
-
-    footer {
-      margin-top: 40px;
-      background: #004d40;
-      color: white;
-      text-align: center;
-      padding: 18px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 21px;
-      }
-
-      .info {
-        grid-template-columns: 1fr;
-      }
-
-      th, td {
-        padding: 7px 4px;
-        font-size: 13px;
-      }
-    }
-
-    @media print {
-      body {
-        background: white;
-      }
-
-      .search-box,
-      footer,
-      .print-btn {
-        display: none;
-      }
-
-      .result {
-        display: block !important;
-        box-shadow: none;
-      }
-    }
-  </style>
+</style>
 </head>
+
 
 <body>
 
 <header>
-  <h1>श्री सरस्वती माध्यमिक विद्यालय</h1>
-  <p>इनरुवा–९, बबिया, सुनसरी</p>
-  <p>🎓 Online Result Portal</p>
+
+<h1>श्री सरस्वती माध्यमिक विद्यालय</h1>
+
+<p>इनरुवा–९, बबिया, सुनसरी, नेपाल</p>
+
+<p>Online Result Portal</p>
+
 </header>
+
 
 <div class="container">
 
-  <div class="search-box">
 
-    <h2>नतिजा खोज्नुहोस्</h2>
+<div class="welcome">
 
-    <p>आफ्नो Roll Number राखेर नतिजा हेर्नुहोस्</p>
+<h2>🎓 विद्यालय नतिजा पोर्टल</h2>
 
-    <input
-      type="number"
-      id="rollInput"
-      placeholder="Roll Number"
-      min="1"
-    >
+<p>आफ्नो कक्षा छनोट गरी नतिजा हेर्नुहोस्</p>
 
-    <br>
-
-    <button onclick="searchResult()">
-      🔍 नतिजा खोज्नुहोस्
-    </button>
-
-    <div id="message"></div>
-
-  </div>
+</div>
 
 
-  <div class="result" id="resultBox">
-
-    <div class="student-info">
-      <h2>श्री सरस्वती माध्यमिक विद्यालय</h2>
-      <p>इनरुवा–९, बबिया, सुनसरी</p>
-      <h3>कक्षा ८ — नतिजा</h3>
-    </div>
+<div class="class-grid">
 
 
-    <div class="info">
-
-      <div>
-        <strong>Roll No:</strong>
-        <span id="studentRoll"></span>
-      </div>
-
-      <div>
-        <strong>नाम:</strong>
-        <span id="studentName"></span>
-      </div>
-
-      <div>
-        <strong>Section:</strong>
-        <span id="studentSection"></span>
-      </div>
-
-    </div>
+<div class="class-card">
+<h3>कक्षा १</h3>
+<button class="disabled">नतिजा हेर्नुहोस्</button>
+</div>
 
 
-    <table>
-
-      <thead>
-        <tr>
-          <th>क्र.सं.</th>
-          <th>विषय</th>
-          <th>प्राप्ताङ्क</th>
-        </tr>
-      </thead>
-
-      <tbody>
-
-        <tr>
-          <td>1</td>
-          <td>नेपाली</td>
-          <td id="nepali"></td>
-        </tr>
-
-        <tr>
-          <td>2</td>
-          <td>English</td>
-          <td id="english"></td>
-        </tr>
-
-        <tr>
-          <td>3</td>
-          <td>Mathematics</td>
-          <td id="math"></td>
-        </tr>
-
-        <tr>
-          <td>4</td>
-          <td>Science</td>
-          <td id="science"></td>
-        </tr>
-
-        <tr>
-          <td>5</td>
-          <td>Social</td>
-          <td id="social"></td>
-        </tr>
-
-      </tbody>
-
-    </table>
+<div class="class-card">
+<h3>कक्षा २</h3>
+<button class="disabled">नतिजा हेर्नुहोस्</button>
+</div>
 
 
-    <div class="summary">
-
-      <p>
-        <strong>GPA:</strong>
-        <span id="gpa"></span>
-      </p>
-
-      <p>
-        <strong>Result:</strong>
-        <span id="status"></span>
-      </p>
-
-    </div>
+<div class="class-card">
+<h3>कक्षा ३</h3>
+<button class="disabled">नतिजा हेर्नुहोस्</button>
+</div>
 
 
-    <div style="text-align:center;">
-      <button class="print-btn" onclick="window.print()">
-        🖨️ Print Result
-      </button>
-    </div>
+<div class="class-card">
+<h3>कक्षा ४</h3>
+<button class="disabled">नतिजा हेर्नुहोस्</button>
+</div>
 
-  </div>
+
+<div class="class-card">
+<h3>कक्षा ५</h3>
+<button class="disabled">नतिजा हेर्नुहोस्</button>
+</div>
+
+
+<div class="class-card">
+<h3>कक्षा ६</h3>
+<button class="disabled">नतिजा हेर्नुहोस्</button>
+</div>
+
+
+<div class="class-card">
+<h3>कक्षा ७</h3>
+<button class="disabled">नतिजा हेर्नुहोस्</button>
+</div>
+
+
+<!-- CLASS 8 IS ACTIVE -->
+
+<div class="class-card">
+
+<h3>कक्षा ८</h3>
+
+<button onclick="openClass8()">
+नतिजा हेर्नुहोस्
+</button>
+
+</div>
+
+
+<div class="class-card">
+<h3>कक्षा ९</h3>
+<button class="disabled">नतिजा हेर्नुहोस्</button>
+</div>
+
+
+<div class="class-card">
+<h3>कक्षा १०</h3>
+<button class="disabled">नतिजा हेर्नुहोस्</button>
+</div>
+
+
+<div class="class-card">
+<h3>कक्षा ११</h3>
+<button class="disabled">नतिजा हेर्नुहोस्</button>
+</div>
+
+
+<div class="class-card">
+<h3>कक्षा १२</h3>
+<button class="disabled">नतिजा हेर्नुहोस्</button>
+</div>
+
+
+</div>
+
+
+<!-- SEARCH SECTION -->
+
+<div id="searchSection">
+
+<h2 class="search-title">
+कक्षा ८ को नतिजा
+</h2>
+
+
+<div class="search-area">
+
+<p style="margin-bottom:15px;">
+आफ्नो Roll Number राखेर नतिजा हेर्नुहोस्
+</p>
+
+
+<input
+type="number"
+id="rollInput"
+placeholder="Roll Number"
+min="1"
+>
+
+
+<br>
+
+
+<button onclick="searchResult()">
+🔍 नतिजा खोज्नुहोस्
+</button>
+
+
+<div id="message"></div>
+
+</div>
+
+
+<!-- RESULT -->
+
+<div id="resultBox">
+
+
+<div class="school-result">
+
+<h2>श्री सरस्वती माध्यमिक विद्यालय</h2>
+
+<p>इनरुवा–९, बबिया, सुनसरी</p>
+
+<p><strong>कक्षा ८ — नतिजा</strong></p>
+
+</div>
+
+
+<div class="student-info">
+
+<div>
+<strong>Roll No:</strong>
+<span id="studentRoll"></span>
+</div>
+
+<div>
+<strong>विद्यार्थीको नाम:</strong>
+<span id="studentName"></span>
+</div>
+
+<div>
+<strong>Section:</strong>
+<span id="studentSection"></span>
+</div>
+
+</div>
+
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>क्र.सं.</th>
+<th>विषय</th>
+<th>प्राप्ताङ्क</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>नेपाली</td>
+<td id="nepali"></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>English</td>
+<td id="english"></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Mathematics</td>
+<td id="math"></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Science</td>
+<td id="science"></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Social</td>
+<td id="social"></td>
+</tr>
+
+</tbody>
+
+</table>
+
+
+<div class="summary">
+
+<p>
+<strong>GPA:</strong>
+<span id="gpa"></span>
+</p>
+
+<p>
+<strong>Result:</strong>
+<span id="status"></span>
+</p>
+
+</div>
+
+
+<div class="print-area">
+
+<button onclick="window.print()">
+🖨️ Print Result
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
 
 <footer>
-  © 2026 श्री सरस्वती माध्यमिक विद्यालय | Online Result Portal
+
+© 2026 श्री सरस्वती माध्यमिक विद्यालय |
+Online Result Portal
+
 </footer>
 
 
 <script>
 
-async function searchResult() {
+function openClass8(){
 
-  const roll = document.getElementById("rollInput").value.trim();
+    document.getElementById("searchSection").style.display="block";
 
-  const message = document.getElementById("message");
-  const resultBox = document.getElementById("resultBox");
+    document.getElementById("searchSection").scrollIntoView({
+        behavior:"smooth"
+    });
 
-  if (roll === "") {
+}
 
-    message.innerHTML = "⚠️ कृपया Roll Number राख्नुहोस्।";
-    resultBox.style.display = "none";
 
-    return;
-  }
+async function searchResult(){
 
-  try {
+    const roll =
+        document.getElementById("rollInput").value.trim();
 
-    const response = await fetch("class8-result.json");
+    const message =
+        document.getElementById("message");
 
-    if (!response.ok) {
-      throw new Error("JSON file भेटिएन");
+    const resultBox =
+        document.getElementById("resultBox");
+
+
+    if(roll===""){
+
+        message.innerHTML =
+        "⚠️ कृपया Roll Number राख्नुहोस्।";
+
+        resultBox.style.display="none";
+
+        return;
     }
 
-    const students = await response.json();
 
-    const student = students.find(
-      s => String(s.roll) === String(roll)
-    );
+    try{
 
-    if (!student) {
+        const response =
+            await fetch("class8-result.json");
 
-      message.innerHTML =
-        "❌ उक्त Roll Number को नतिजा भेटिएन।";
 
-      resultBox.style.display = "none";
+        if(!response.ok){
 
-      return;
+            throw new Error("JSON file भेटिएन");
+
+        }
+
+
+        const students =
+            await response.json();
+
+
+        const student =
+            students.find(
+                s => String(s.roll) === String(roll)
+            );
+
+
+        if(!student){
+
+            message.innerHTML =
+            "❌ उक्त Roll Number को नतिजा भेटिएन।";
+
+            resultBox.style.display="none";
+
+            return;
+        }
+
+
+        message.innerHTML =
+        "✅ नतिजा भेटियो।";
+
+
+        document.getElementById("studentRoll")
+        .textContent=student.roll;
+
+
+        document.getElementById("studentName")
+        .textContent=student.name;
+
+
+        document.getElementById("studentSection")
+        .textContent=student.section;
+
+
+        document.getElementById("nepali")
+        .textContent=student.nepali;
+
+
+        document.getElementById("english")
+        .textContent=student.english;
+
+
+        document.getElementById("math")
+        .textContent=student.math;
+
+
+        document.getElementById("science")
+        .textContent=student.science;
+
+
+        document.getElementById("social")
+        .textContent=student.social;
+
+
+        document.getElementById("gpa")
+        .textContent=student.gpa;
+
+
+        document.getElementById("status")
+        .textContent=student.result;
+
+
+        resultBox.style.display="block";
+
+
+    }catch(error){
+
+        message.innerHTML =
+        "❌ Result data load हुन सकेन।";
+
+        resultBox.style.display="none";
+
+        console.error(error);
+
     }
 
-    message.innerHTML = "✅ नतिजा भेटियो।";
-
-    document.getElementById("studentRoll").textContent = student.roll;
-    document.getElementById("studentName").textContent = student.name;
-    document.getElementById("studentSection").textContent = student.section;
-
-    document.getElementById("nepali").textContent = student.nepali;
-    document.getElementById("english").textContent = student.english;
-    document.getElementById("math").textContent = student.math;
-    document.getElementById("science").textContent = student.science;
-    document.getElementById("social").textContent = student.social;
-
-    document.getElementById("gpa").textContent = student.gpa;
-    document.getElementById("status").textContent = student.result;
-
-    resultBox.style.display = "block";
-
-  } catch (error) {
-
-    message.innerHTML =
-      "❌ Result data load हुन सकेन।";
-
-    resultBox.style.display = "none";
-
-    console.error(error);
-  }
 }
 
 </script>
+
 
 </body>
 </html>
